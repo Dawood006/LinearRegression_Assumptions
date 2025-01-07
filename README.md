@@ -48,15 +48,11 @@ pip install pandas numpy matplotlib seaborn statsmodels scikit-learn
 
 1. Clone the repository:
     ```bash
-    git clone <repository_url>
+    git clone <(https://github.com/Dawood006/LinearRegression_Assumptions.git)>
     ```
 
-2. Navigate to the project directory:
-    ```bash
-    cd <project_directory>
-    ```
 
-3. Open the Jupyter Notebook:
+2. Open the Jupyter Notebook:
     ```bash
     jupyter notebook Linear_Assumption.ipynb
     ```
@@ -69,13 +65,5 @@ pip install pandas numpy matplotlib seaborn statsmodels scikit-learn
 - Visualizations and statistical tests complement each other in diagnosing potential issues.
 - Understanding assumption violations can guide corrective actions, such as transformations or alternative modeling techniques.
 
-## Contributing
 
-Contributions are welcome! If you have ideas for improving this project, feel free to fork the repository and create a pull request.
-
-
-
-### Acknowledgements
-
-Special thanks to the data science community for providing the tools and inspiration to make this analysis possible.
 
