@@ -1,69 +1,80 @@
-# Linear Regression Assumptions: Before and After Analysis
+# Linear Assumption Verification Toolkit
 
-This project focuses on understanding and validating the key assumptions of linear regression before and after fitting a model. By carefully examining these assumptions, we can ensure the reliability and interpretability of the regression results.
+This repository contains a Python module and an example notebook for verifying key assumptions of linear regression. These tools are designed to assist data analysts and scientists in evaluating the validity of their data for linear regression modeling.
 
-## Project Overview
+## Contents
 
-The notebook provides a comprehensive workflow to:
+1. **`L_assumption.py`**  
+   This file contains the `Assumption` class, which provides various functions to check linear regression assumptions.
 
-1. **Validate Linear Regression Assumptions**:
-    - **Linearity**: Checking whether the relationship between the independent and dependent variables is linear.
-    - **Normality of Residuals**: Ensuring that residuals are approximately normally distributed.
-    - **Homoscedasticity**: Verifying that the variance of residuals is constant across all levels of the independent variables.
-    - **Independence of Residuals**: Confirming that residuals are independent of each other.
+2. **`Linear_Assumption.ipynb`**  
+   An interactive Jupyter notebook demonstrating the usage of the `Assumption` class with real-world datasets.
 
-2. **Model Development**:
-    - Fitting a linear regression model using the dataset.
+---
 
-3. **Post-Model Evaluation**:
-    - Reassessing the assumptions after fitting the model to identify any violations or areas for improvement.
+## Features of the `Assumption` Class
 
-4. **Visual and Statistical Tools**:
-    - Utilizes plots such as scatter plots, residual plots, histograms, and Q-Q plots.
-    - Leverages statistical tests to validate assumptions.
+The `Assumption` class offers the following functionalities:
 
-## Files
+1. **Linear Relationship Check**
+   - Visualizes scatter plots between independent variables and the target variable to evaluate linear relationships.
 
-- **`Linear_Assumption.ipynb`**: The main Jupyter Notebook containing all the code and analysis for this project.
+2. **Correlation Matrix**
+   - Generates a heatmap to visualize correlation coefficients between features.
 
-## Requirements
+3. **Homoscedasticity Check**
+   - Plots residuals versus predicted values to assess constant variance.
 
-To run the notebook, ensure you have the following libraries installed:
+4. **Normality of Residuals**
+   - Produces a Q-Q plot and density plot for the residuals to evaluate normal distribution.
 
-- Python 3.x
-- Jupyter Notebook
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- statsmodels
-- scikit-learn
+5. **Normality of Features**
+   - Creates Q-Q plots for each feature to assess their normality.
 
-You can install the required libraries using pip:
+6. **Autocorrelation of Residuals**
+   - Visualizes residuals to identify any autocorrelation patterns.
+
+---
+
+## Usage Instructions
+
+### Prerequisites
+
+- Python 3.8 or later
+- Required libraries:
+  - `pandas`
+  - `numpy`
+  - `seaborn`
+  - `matplotlib`
+  - `scipy`
+
+Install the required dependencies using:
+
 ```bash
-pip install pandas numpy matplotlib seaborn statsmodels scikit-learn
+pip install pandas numpy seaborn matplotlib scipy
 ```
 
-## Usage
+### Running the Example Notebook
 
-1. Clone the repository:
-    ```bash
-    git clone <(https://github.com/Dawood006/LinearRegression_Assumptions.git)>
-    ```
+1. Clone this repository:
 
+   ```bash
+   git clone https://github.com/Dawood006/LinearRegression_Assumptions.git
+   ```
 
-2. Open the Jupyter Notebook:
-    ```bash
-    jupyter notebook Linear_Assumption.ipynb
-    ```
+2. Navigate to the project directory:
 
-4. Follow the cells step by step to explore the data, validate assumptions, and fit the linear regression model.
+   ```bash
+   cd LinearRegression_Assumptions
+   ```
 
-## Key Insights
+3. Launch Jupyter Notebook:
 
-- Proper validation of assumptions ensures the robustness of linear regression analysis.
-- Visualizations and statistical tests complement each other in diagnosing potential issues.
-- Understanding assumption violations can guide corrective actions, such as transformations or alternative modeling techniques.
+   ```bash
+   jupyter notebook
+   ```
 
+4. Open `Linear_Assumption.ipynb` to explore the usage of the `Assumption` class.
 
+---
 
