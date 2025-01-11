@@ -6,7 +6,7 @@ from scipy import  stats
 
 class Assumption:
     def linear_relation(self,df):
-        p1=round((len(df.columns)-1)/2)
+        p1=round((len(df.columns))/2)
         fig,ax=plt.subplots(p1,2,figsize=(12,18))
         ax=ax.flatten()
         for e,i in enumerate (df.columns[:-1]):
@@ -29,7 +29,7 @@ class Assumption:
  
 
     def normality_features(self,df):
-        p1=round((len(df.columns)-1)/2)
+        p1=round((len(df.columns))/2)
         fig,ax=plt.subplots(p1,2,figsize=(12,18))
         ax=ax.flatten()
 
